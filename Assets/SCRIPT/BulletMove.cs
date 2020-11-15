@@ -10,6 +10,7 @@ public class BulletMove : MonoBehaviour
     public float bulletspeed;
     public float bulletlife;
     private int direction;
+private int vx;
 
     private void Awake()
     {
@@ -17,7 +18,7 @@ public class BulletMove : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         Playertrans = player.transform;
         
-    }
+    }s
     void Start()
     {
         if (player.GetComponent<HeroKnight>().m_facingDirection > 0 && player.GetComponent<HeroKnight>().m_facingDirectionY == 0)
